@@ -1,9 +1,8 @@
-import java.sql.SQLOutput;
+package ExceptionHandling;
 
 public class Interest_Calculator {
 
-        static void calc ( double p, double r, int d)throws
-        {RuntimeException
+        static void calc ( double p, double r, int d)throws Exception{
             // validate p,r and d
             // if any one of them is INVALID, THROW an exception
             if (p < InvalidPrincipalException.MIN_PRINCIPAL || p > InvalidPrincipalException.MAX_PRINCIPAL)

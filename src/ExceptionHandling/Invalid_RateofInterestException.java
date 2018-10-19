@@ -1,3 +1,5 @@
+package ExceptionHandling;
+
 public class Invalid_RateofInterestException extends Exception {
 
         public static final double MIN_RATE = 4;

@@ -1,3 +1,5 @@
+package ExceptionHandling;
+
 public class Invalid_DurationException extends Exception {
 
 
