@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+
+    .mandatory{
+        border: 4pt solid red;
+        border-radius: 5px;
+        font-weight: bolder;
+        background-color: blueviolet;
+    }
+
+      .optional{
+        border: 4pt solid yellowgreen;
+        border-radius: 10px;
+        font-weight: lighter;
+        background-color: violet
+    }
+
+    #list1{
+        border: 4pt dotted maroon;
+        border-radius: 10px;
+        background-color: gray;
+        padding: 20px;
+        margin: 15px;
+        margin-left: 30px;
+        margin-right: 10px
+    }
+    
+    </style>
+
+</head>
+
+
+<body>
+    <h2>Account Opening Form</h2>
+    <form method="GET">
+        Name of Candidate : <input type="text" name ="q" class="optional"/>
+                            <input type="text" name ="q" class="mandatory"/>
+                            <input type="text" name ="q"/>
+                        </select> <br/> <br/>
+
+        
+        Gender:         <input type="radio" name="gender" value="Female"/> Female
+                        <input type="radio" name="gender" value="Male" /> Male<br/> <br/>
+
+        Aadhar Card: <input type="text" name ="q" class="mandatory"/> <br/> <br/>
+
+        PAN Card: <input type="text" name ="q" class="mandatory"/> <br/> <br/>
+
+        Type of Account: <input type="radio" name="Type" value="Savings"/> Savings
+                         <input type="radio" name="Type" value="Current"/> Current<br/>  <br/>
+        
+        Occupation: <input type="radio" name="Type" value="Savings" id="list1"/> Salaried
+                    <input type="radio" name="Type" value="Current"/> Business
+                    <input type="radio" name="Type" value="Current"/> Professional<br/>  <br/>
+        
+        Services: <br/>  <br/>         
+        <input type="checkbox" name="interests" value="Net Banking">Net Bankikng<br/>
+        <input type="checkbox" name="interests" value="Debit Card">Debit Card<br/>
+        <input type="checkbox" name="interests" value="Mobile Banking">Mobile Banking<br/> <br/>
+        
+        <input type="submit" value="Submit" class="mandatory"/>
+        <input type="reset" value="Reset"/>
+    
+        
+
+        </form>
+    </body>
+    </html>
