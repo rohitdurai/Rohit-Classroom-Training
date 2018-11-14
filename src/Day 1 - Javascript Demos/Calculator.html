@@ -1,0 +1,54 @@
+<html>
+    <title>Calculator</title>
+<head>
+    <script type = "text/javascript">
+
+    function calc(){
+        a = Number(document.getElementById("val1").value); 
+        b = Number(document.getElementById("val2").value);  
+        c = document.getElementById("opr").value
+
+        switch(c){
+        
+        case "Add":
+            document.getElementById("val3").value=a+b;
+            break;
+        
+        case "Sub":
+        document.getElementById("val3").value=a-b;
+        break;
+
+        case "Multiply":
+         document.getElementById("val3").value=a*b;
+         break;
+
+        case "Division":
+        if ((a===0)||(b===0)){
+            document.write("Invalid number entered");
+        }else {
+        document.getElementById("val3").value=a/b;
+        break;
+        }
+         }
+    }
+</script>    
+</head>
+
+<body>
+Enter First Number:<input type="text" id="val1"><br/>
+
+Enter Second Number: <input type="text" id="val2"><br/>
+
+
+
+<select id="opr" name = opr><br/>
+    <option id = "add">Add</options><br/>
+    <option id = "sub">Sub</options><br/>
+    <option id = "multiply">Multiply</options><br/>
+    <option id = "div">Division</options><br/>
+</select>
+
+    <input type="submit" value="submit" onclick = calc()>
+    Result: <input type="text" id ="val3"><br/>
+</body>
+</html>

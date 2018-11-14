@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type = "text/javascript">
+function display(a)
+{   
+    if (a === "para1"){
+        document.getElementById("para1").innerHTML= "Hey 1, Welcome";
+        
+    }
+    else{
+        document.getElementById("para1").innerHTML= "Hey 2, Welcome";
+    }
+    
+}
+
+</script>
+</head>
+
+<body>
+        <input type = button id = "val1" value = "Display a confirm box 1:" onclick = "display('para1')">
+
+        <input type = button id = "val2" value = "Display a confirm box 2:" onclick = "display('para2')">
+        <p id = para1></p>
+        
+</body>
+</html>
