@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Object Demo </title>
+
+    <script>
+    var myEmployee = {
+        empId: 1001,
+        empName: "Rohit",
+        empDept: "IT",
+        isAdmin: false,
+        empSalary: 45000,
+        address: {
+            street:"Parel Company",
+            city:"Thane",
+            pincode: 400053,
+        }
+        
+    };
+
+    console.log(myEmployee["empId"]);
+    console.log(myEmployee.address); // all address will print
+    console.log(myEmployee["address"]["city"]);
+    console.log(myEmployee.address.city)
+    
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

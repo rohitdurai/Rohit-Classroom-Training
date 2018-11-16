@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Array Demo</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    var arr = new Array("Rashmi", "Parth", "Anushka");
+    document.write("Length of the Array is: " +arr.length +"<br/>");
+
+    var arrjoin = arr.join(",");
+    document.write("<br>");
+    document.write(arrjoin);
+
+    var arrslice = arr.slice(1,5); //1 - Index, 3 - Position
+    document.write("<br>");
+    document.write(arrslice);
+
+    var arrcon = arr.concat(arrslice);
+    document.write("<br>");
+    document.write(arrcon);
+
+    var a = "ROHITDURAI";
+    document.write("<br>");
+    document.write(a.slice(1,5));
+
+    </script>
+</body>
+</html>

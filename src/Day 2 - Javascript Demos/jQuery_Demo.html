@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>> jQuery Demos </title>
+   <!--
+       <script src="JQuery/script/jquery-1.4.4.min.js" type="text/javascript"> </script>
+   --> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type = "text/javascript"> </script>
+    
+
+</head>
+
+<body>
+    <p class="test"> Hello jQuery ONE</p>
+    <p id="test1"> Hello jQuery TWO</p>
+    <button> Click Me </button>
+
+    <script type="text/javascript">
+
+        // jQuery Object to be used to manipulate the DOM
+
+        $(document).ready(function () {
+               $("button").click(function(){
+               $(".test").hide();  // .test is for class
+               $("#test1").hide();  // #test s for id
+               });
+        });
+
+    </script>
+</body>
+
+</html>

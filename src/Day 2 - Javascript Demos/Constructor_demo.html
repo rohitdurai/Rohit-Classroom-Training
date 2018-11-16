@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Constructor</title>
+
+    <script>
+        function createEmployee(empId, empName, empSalary, empDep) {
+            this.empId = empId;
+            this.empName = empName;
+            this.empSalary = empSalary;
+            this.empDep = empDep;
+            this.totalSalary;
+
+            this.getTakeHomeSalary = function () {
+
+                this.totalSalary = this.empSalary - (this.empSalary * 0.12),
+                    console.log("Employee Take Home Salary = " + this.totalSalary)
+            }
+        }
+        var empone = new createEmployee(1001, "Rohit", 20000, "JAVA");
+        console.log("Employee id is: " + empone.empId);
+        console.log("Employee Name is: " + empone.empName);
+        console.log("Employee Salary is: " + empone.empSalary);
+        console.log("Employee Department is: " + empone.empDep);
+        empone.getTakeHomeSalary();
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
