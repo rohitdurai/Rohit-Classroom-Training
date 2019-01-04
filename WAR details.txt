@@ -1,0 +1,9 @@
+Creating a WAR
+1> right click on project
+2> export -> export
+3> web folder 
+
+===
+
+- place the WAR file on below path
+C:\Users\Administrator\SpringBoot Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\webapps
